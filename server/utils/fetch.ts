@@ -6,4 +6,5 @@ export const myFetch = $fetch.create({
   },
   timeout: 10000,
   retry: 3,
+  proxy: process.env.HTTPS_PROXY || process.env.HTTP_PROXY,
 })
